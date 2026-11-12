@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    font-family: 'DM Sans', sans-serif;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(149, 104, 232, 0.2), transparent 35%),
+        radial-gradient(circle at 85% 80%, rgba(121, 80, 202, 0.16), transparent 35%),
+        #100d1b;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 440px;
+    padding: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 24px;
+    background: rgba(31, 25, 48, 0.94);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+    color: #fff;
+}
+
+.auth-logo {
+    width: 54px;
+    height: 54px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 28px;
+    border-radius: 17px;
+    background: linear-gradient(135deg, #a77af5, #7950ca);
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.auth-eyebrow {
+    color: #b69aef;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.auth-card h1 {
+    margin: 12px 0;
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.auth-subtitle {
+    margin-bottom: 30px;
+    color: #b8b0c9;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.auth-card label {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    color: #e7e0f4;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.auth-card input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 15px;
+    border: 1px solid #48405d;
+    border-radius: 11px;
+    outline: none;
+    background: #211b30;
+    color: #fff;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.auth-card input:focus {
+    border-color: #a77af5;
+    box-shadow: 0 0 0 3px rgba(167, 122, 245, 0.13);
+}
+
+.auth-card input::placeholder {
+    color: #837a96;
+}
+
+.auth-card form>button {
+    margin-top: 7px;
+    padding: 15px;
+    border: none;
+    border-radius: 11px;
+    background: linear-gradient(135deg, #a77af5, #7950ca);
+    color: #fff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.auth-card form>button:hover {
+    transform: translateY(-2px);
+}
+
+.auth-card form>button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.auth-message {
+    margin-top: 18px;
+    color: #d6c3ff;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.auth-switch {
+    margin-top: 26px;
+    color: #b8b0c9;
+    text-align: center;
+    font-size: 13px;
+}
+
+.auth-switch button {
+    margin-left: 7px;
+    border: none;
+    background: none;
+    color: #bd9bff;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 28px 22px;
+    }
+
+    .auth-card h1 {
+        font-size: 27px;
+    }
+}
